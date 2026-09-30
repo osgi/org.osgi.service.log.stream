@@ -12,7 +12,7 @@
 		<relativePath>../../pom.xml</relativePath>
 	</parent>
 	<artifactId>org.osgi.spec.service.log.stream</artifactId>
-	<name>OSGi Specification repo for org.osgi.service.log.stream</name>
+	<name>OSGi Log Stream Provider Service Specification</name>
 
 	<dependencies>
 		<dependency>
