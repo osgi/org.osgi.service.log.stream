@@ -41,7 +41,6 @@ import org.osgi.test.common.annotation.InjectBundleContext;
 import org.osgi.test.common.annotation.InjectService;
 import org.osgi.test.junit5.context.BundleContextExtension;
 import org.osgi.test.junit5.service.ServiceExtension;
-import org.osgi.test.support.tracker.Tracker;
 import org.osgi.util.promise.Promise;
 import org.osgi.util.pushstream.PushStream;
 import org.osgi.util.tracker.ServiceTracker;
@@ -66,9 +65,8 @@ public class LogStreamTest {
 				context, LogStreamProvider.class, null);
 		logStreamProviderTracker.open();
 
-		// logService = Tracker.waitForService(logServiceTracker, SLEEP);
-		logStreamProvider = Tracker.waitForService(logStreamProviderTracker,
-				SLEEP);
+		// logService = logServiceTracker.waitForService(SLEEP);
+		logStreamProvider = logStreamProviderTracker.waitForService(SLEEP);
 	}
 
 	@AfterEach
