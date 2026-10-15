@@ -56,6 +56,18 @@
 		</dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.util.function</artifactId>
+			<version>1.2.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.util.promise</artifactId>
+			<version>1.3.0</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.log.stream</artifactId>
 			<version>${revision}</version>
 			<scope>compile</scope>
